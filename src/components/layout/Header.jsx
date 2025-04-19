@@ -134,8 +134,40 @@ function Header() {
     { title: "Contact", path: "/contact" },
   ];
 
+  // Définition des styles CSS pour l'animation slideDown
+  const slideDownKeyframes = `
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .animate-slideDown {
+      animation: slideDown 0.5s ease forwards;
+    }
+  `;
+
+  // Définition des styles CSS pour noscript
+  const noscriptStyles = `
+    .mobile-menu {
+      display: none !important;
+    }
+    @media (max-width: 767px) {
+      header nav:not(.mobile-menu) {
+        display: block !important;
+      }
+    }
+  `;
+
   return (
     <>
+      {/* Injecter les styles via une balise style standard */}
+      <style>{slideDownKeyframes}</style>
+
       <header
         ref={headerRef}
         id="site-header"
@@ -416,36 +448,9 @@ function Header() {
         )}
       </AnimatePresence>
 
-      {/* Animation pour le header sticky */}
-      <style jsx>{`
-        @keyframes slideDown {
-          0% {
-            transform: translateY(-100%);
-            opacity: 0;
-          }
-          100% {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-
-        .animate-slideDown {
-          animation: slideDown 0.5s ease forwards;
-        }
-      `}</style>
-
       {/* Solution de repli en cas de désactivation de JavaScript */}
       <noscript>
-        <style jsx>{`
-          .mobile-menu {
-            display: none !important;
-          }
-          @media (max-width: 767px) {
-            header nav:not(.mobile-menu) {
-              display: block !important;
-            }
-          }
-        `}</style>
+        <style>{noscriptStyles}</style>
       </noscript>
     </>
   );

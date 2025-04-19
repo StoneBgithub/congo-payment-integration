@@ -21,7 +21,7 @@ function Footer() {
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://facebook.com/integrateurcongo"
+                  href="https://www.facebook.com/share/1Dz1S5CjHE/?mibextid=wwXIfr"
                   className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
                   aria-label="Facebook"
                 >
@@ -39,7 +39,7 @@ function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://wa.me/243XXXXXXXX"
+                  href="https://wa.me/242069868959"
                   className="text-gray-400 hover:text-green-500 transition-colors duration-300"
                   aria-label="WhatsApp"
                 >
@@ -154,7 +154,7 @@ function Footer() {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   ></path>
                 </svg>
-                contact@integrateurcongo.com
+                integrateurcongo@gmail.com
               </li>
               <li className="flex items-center text-gray-400">
                 <svg
@@ -171,8 +171,8 @@ function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   ></path>
                 </svg>
-                <a href="tel:+243XXXXXXXX" className="hover:text-primary">
-                  +242 XX XXX XXXX
+                <a href="tel:+242069868959" className="hover:text-primary">
+                  +242 06 986 89 59
                 </a>
               </li>
               <li className="flex items-center text-gray-400">
